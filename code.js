@@ -46,8 +46,10 @@ export function disegnaPunto({
 let img;
 //
 
-export function caricamentoRisorse() {}
-img = loadImage("./assets/image.");
+export function caricamentoRisorse() {
+  img = loadImage("./assets/image.jpg");
+}
+
 export function impostazioni() {
   frameRate(30);
   angleMode(DEGREES);
