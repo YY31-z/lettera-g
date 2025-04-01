@@ -1,5 +1,5 @@
 export const configurazione = {
-  testo: "yy",
+  testo: "Z",
   dimensione: 0.8,
   interlinea: 0.7,
   allineamento: "centro",
@@ -36,19 +36,18 @@ export function disegnaPunto({
   beta = 0,
   gamma = 0,
 }) {
-  if (indice % 2 == 0) {
-    noStroke();
-    fill("white");
-  } else {
-    fill("pink");
-  }
-  rectMode(CENTER);
-  rect(x, y, mouseX, mouseY);
+  stroke("black");
+  push();
+  translate(x, y);
+  rotate(frameCount);
+  image(img, 0, 0, 50);
+  pop;
 }
+let img;
 //
 
 export function caricamentoRisorse() {}
-
+img = loadImage("./assets/image.");
 export function impostazioni() {
   frameRate(30);
   angleMode(DEGREES);
