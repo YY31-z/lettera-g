@@ -36,7 +36,7 @@ export function disegnaPunto({
   beta = 0,
   gamma = 0,
 }) {
-  stroke("black");
+  noStroke;
   push();
   translate(x, y);
   rotate(frameCount);
