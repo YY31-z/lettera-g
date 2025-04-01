@@ -40,14 +40,14 @@ export function disegnaPunto({
   push();
   translate(x, y);
   rotate(frameCount);
-  image(img, 0, 0, 50);
-  pop;
+  image(img, 0, 0, 30, 30);
+  pop();
 }
 let img;
 //
 
 export function caricamentoRisorse() {
-  img = loadImage("./assets/image.jpg");
+  img = loadImage("./assets/img.jpg");
 }
 
 export function impostazioni() {
